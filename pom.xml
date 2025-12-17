@@ -6,22 +6,25 @@
 
     <groupId>pl.feature.toggle.service</groupId>
     <artifactId>feature-toggle-model</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
     <packaging>jar</packaging>
     <name>model</name>
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/SaQie/FTAAS</url>
+            <id>nexus-releases</id>
+            <url>https://repo.feature-toggle-service.pl/repository/maven-releases/</url>
         </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>https://repo.feature-toggle-service.pl/repository/maven-snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <contracts.version>1.0-SNAPSHOT</contracts.version>
+        <revision>1.0.0-SNAPSHOT</revision>
     </properties>
 
     <dependencies>
