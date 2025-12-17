@@ -1,10 +1,10 @@
-package com.ftaas.domain.project;
+package pl.feature.toggle.service.model.project;
 
-import com.ftaas.domain.Identifier;
+import pl.feature.toggle.service.model.Identifier;
 
 import java.util.UUID;
 
-import static com.ftaas.domain.exception.ValidationException.isNull;
+import static pl.feature.toggle.service.model.exception.ValidationException.isNull;
 
 
 public record ProjectId(

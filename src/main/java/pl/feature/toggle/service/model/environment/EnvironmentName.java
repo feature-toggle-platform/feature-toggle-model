@@ -1,7 +1,7 @@
-package com.ftaas.domain.environment;
+package pl.feature.toggle.service.model.environment;
 
 
-import static com.ftaas.domain.exception.ValidationException.isNull;
+import static pl.feature.toggle.service.model.exception.ValidationException.isNull;
 
 public record EnvironmentName(
         String value

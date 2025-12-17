@@ -1,4 +1,4 @@
-package com.ftaas.domain.exception;
+package pl.feature.toggle.service.model.exception;
 
 public class ValidationException extends RuntimeException {
     private ValidationException(String message) {

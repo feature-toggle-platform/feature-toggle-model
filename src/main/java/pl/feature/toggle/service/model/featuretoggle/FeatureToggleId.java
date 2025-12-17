@@ -1,6 +1,6 @@
-package com.ftaas.domain.featuretoggle;
+package pl.feature.toggle.service.model.featuretoggle;
 
-import com.ftaas.domain.Identifier;
+import pl.feature.toggle.service.model.Identifier;
 
 import java.util.UUID;
 

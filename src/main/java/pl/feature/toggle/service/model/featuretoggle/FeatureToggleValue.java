@@ -1,4 +1,4 @@
-package com.ftaas.domain.featuretoggle;
+package pl.feature.toggle.service.model.featuretoggle;
 
 public interface FeatureToggleValue {
 

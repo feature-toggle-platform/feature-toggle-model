@@ -1,8 +1,8 @@
-package com.ftaas.domain.project;
+package pl.feature.toggle.service.model.project;
 
 
-import static com.ftaas.domain.exception.ValidationException.isBlank;
-import static com.ftaas.domain.exception.ValidationException.isNull;
+import static pl.feature.toggle.service.model.exception.ValidationException.isBlank;
+import static pl.feature.toggle.service.model.exception.ValidationException.isNull;
 
 public record ProjectName(
         String value

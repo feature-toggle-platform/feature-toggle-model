@@ -1,4 +1,4 @@
-package com.ftaas.domain;
+package pl.feature.toggle.service.model;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
