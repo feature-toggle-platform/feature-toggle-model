@@ -1,0 +1,31 @@
+package pl.feature.toggle.service.model.security;
+
+import pl.feature.toggle.service.model.exception.MissingRoleException;
+
+import java.util.Set;
+
+public record Actor(
+        ActorId actorId,
+        Set<Role> roles,
+        Username username
+) {
+
+    public static Actor system() {
+        return new Actor(ActorId.system(), Set.of(), Username.system());
+    }
+
+    public static Actor create(ActorId actorId, Username username, Role... roles) {
+        return new Actor(actorId, Set.of(roles), username);
+    }
+
+    public boolean has(Role role) {
+        return roles.contains(role);
+    }
+
+    public void require(Role role) {
+        if (!has(role)) {
+            throw new MissingRoleException(this);
+        }
+    }
+
+}
