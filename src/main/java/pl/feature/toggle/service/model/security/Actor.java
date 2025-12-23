@@ -2,6 +2,7 @@ package pl.feature.toggle.service.model.security;
 
 import pl.feature.toggle.service.model.exception.MissingRoleException;
 
+import java.util.Collection;
 import java.util.Set;
 
 public record Actor(
@@ -16,6 +17,10 @@ public record Actor(
 
     public static Actor create(ActorId actorId, Username username, Role... roles) {
         return new Actor(actorId, Set.of(roles), username);
+    }
+
+    public static Actor create(ActorId actorId, Username username, Collection<Role> roles) {
+        return new Actor(actorId, Set.copyOf(roles), username);
     }
 
     public boolean has(Role role) {
