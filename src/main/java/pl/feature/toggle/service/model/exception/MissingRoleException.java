@@ -1,7 +1,7 @@
 package pl.feature.toggle.service.model.exception;
 
 
-import pl.feature.toggle.service.model.security.Actor;
+import pl.feature.toggle.service.model.security.actor.Actor;
 
 public class MissingRoleException extends RuntimeException {
     public MissingRoleException(Actor actor) {

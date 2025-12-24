@@ -1,4 +1,4 @@
-package pl.feature.toggle.service.model.security;
+package pl.feature.toggle.service.model.security.actor;
 
 import pl.feature.toggle.service.model.exception.MissingRoleException;
 
