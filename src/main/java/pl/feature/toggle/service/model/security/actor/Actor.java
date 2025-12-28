@@ -33,4 +33,15 @@ public record Actor(
         }
     }
 
+    public boolean isSystem() {
+        return actorId.equals(ActorId.system());
+    }
+
+    public String idAsString() {
+        return actorId.toString();
+    }
+
+    public String usernameAsString() {
+        return username.toString();
+    }
 }
