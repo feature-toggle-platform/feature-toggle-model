@@ -21,7 +21,7 @@ public record CorrelationId(
         return new CorrelationId(UUID.randomUUID().toString());
     }
 
-    public String headerName() {
+    public static String headerName() {
         return HEADER_NAME;
     }
 
