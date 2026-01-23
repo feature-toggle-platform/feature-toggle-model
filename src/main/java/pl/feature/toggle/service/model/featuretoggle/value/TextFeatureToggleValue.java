@@ -4,19 +4,24 @@ import pl.feature.toggle.service.model.exception.WrongFeatureToggleValue;
 
 import static java.util.Objects.isNull;
 
-record StringFeatureToggleValue(
+record TextFeatureToggleValue(
         String value
 ) implements FeatureToggleValue {
 
-    static StringFeatureToggleValue create(String value) {
+    static TextFeatureToggleValue create(String value) {
         if (isNull(value)) {
             throw new WrongFeatureToggleValue();
         }
-        return new StringFeatureToggleValue(value);
+        return new TextFeatureToggleValue(value);
     }
 
     @Override
     public String asText() {
         return value;
+    }
+
+    @Override
+    public FeatureToggleType type() {
+        return FeatureToggleType.TEXT;
     }
 }

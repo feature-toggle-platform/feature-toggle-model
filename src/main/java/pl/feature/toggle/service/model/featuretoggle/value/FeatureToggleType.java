@@ -5,7 +5,7 @@ import pl.feature.toggle.service.model.exception.UnsupportedFeatureToggleType;
 public enum FeatureToggleType {
     BOOLEAN,
     NUMBER,
-    STRING;
+    TEXT;
 
     public static FeatureToggleType fromString(String rawType) {
         if (rawType == null || rawType.isBlank()) {

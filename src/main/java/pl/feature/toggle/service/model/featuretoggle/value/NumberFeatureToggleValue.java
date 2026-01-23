@@ -27,8 +27,17 @@ record NumberFeatureToggleValue(
         }
     }
 
+    public static FeatureToggleValue create(Number value) {
+        return new NumberFeatureToggleValue(BigDecimal.valueOf(value.doubleValue()));
+    }
+
     @Override
     public String asText() {
         return value.toPlainString();
+    }
+
+    @Override
+    public FeatureToggleType type() {
+        return FeatureToggleType.NUMBER;
     }
 }

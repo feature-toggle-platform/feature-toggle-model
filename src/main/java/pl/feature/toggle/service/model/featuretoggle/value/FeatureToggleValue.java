@@ -4,4 +4,10 @@ public interface FeatureToggleValue {
 
     String asText();
 
+    FeatureToggleType type();
+
+    default String typeName(){
+        return type().name();
+    }
+
 }

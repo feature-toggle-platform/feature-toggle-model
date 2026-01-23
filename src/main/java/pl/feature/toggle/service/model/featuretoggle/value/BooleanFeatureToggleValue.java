@@ -32,9 +32,18 @@ record BooleanFeatureToggleValue(
         return new BooleanFeatureToggleValue(Boolean.parseBoolean(value));
     }
 
+    static BooleanFeatureToggleValue create(boolean value) {
+        return new BooleanFeatureToggleValue(value);
+    }
+
 
     @Override
     public String asText() {
         return value ? ENABLED_VALUE : DISABLED_VALUE;
+    }
+
+    @Override
+    public FeatureToggleType type() {
+        return FeatureToggleType.BOOLEAN;
     }
 }
