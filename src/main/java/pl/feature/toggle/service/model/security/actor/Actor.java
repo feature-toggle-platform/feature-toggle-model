@@ -38,10 +38,10 @@ public record Actor(
     }
 
     public String idAsString() {
-        return actorId.toString();
+        return actorId.value();
     }
 
     public String usernameAsString() {
-        return username.toString();
+        return username.value();
     }
 }

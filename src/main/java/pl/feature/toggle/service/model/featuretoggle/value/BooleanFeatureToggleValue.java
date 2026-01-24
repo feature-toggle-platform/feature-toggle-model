@@ -26,7 +26,7 @@ record BooleanFeatureToggleValue(
         if (isNull(value)) {
             throw new WrongFeatureToggleValue();
         }
-        if (!ALLOWED_VALUES.contains(value)) {
+        if (!ALLOWED_VALUES.contains(value.toUpperCase())) {
             throw new WrongFeatureToggleValue(value, ALLOWED_VALUES);
         }
         return new BooleanFeatureToggleValue(Boolean.parseBoolean(value));
