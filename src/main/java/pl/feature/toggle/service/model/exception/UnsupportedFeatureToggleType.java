@@ -1,9 +1,9 @@
 package pl.feature.toggle.service.model.exception;
 
-import pl.feature.toggle.service.model.featuretoggle.value.FeatureToggleType;
+import pl.feature.toggle.service.model.featuretoggle.value.FeatureToggleValueType;
 
 public class UnsupportedFeatureToggleType extends RuntimeException {
-    public UnsupportedFeatureToggleType(FeatureToggleType type) {
+    public UnsupportedFeatureToggleType(FeatureToggleValueType type) {
         super("Unsupported feature toggle type: " + type);
     }
 
