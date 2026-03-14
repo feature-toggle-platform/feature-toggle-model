@@ -15,6 +15,10 @@ public record Actor(
         return new Actor(ActorId.system(), Set.of(), Username.system());
     }
 
+    public static Actor create(String actorId, String username){
+        return new Actor(ActorId.create(actorId), Set.of(), Username.create(username));
+    }
+
     public static Actor create(ActorId actorId, Username username, Role... roles) {
         return new Actor(actorId, Set.of(roles), username);
     }
