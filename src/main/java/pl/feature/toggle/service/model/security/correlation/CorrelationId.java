@@ -25,4 +25,8 @@ public record CorrelationId(
         return HEADER_NAME;
     }
 
+    public static String MDCName() {
+        return "correlationId";
+    }
+
 }
