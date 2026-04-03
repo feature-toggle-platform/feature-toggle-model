@@ -1,10 +1,10 @@
-package pl.feature.toggle.service.model.environment;
+package com.configly.model.environment;
 
-import pl.feature.toggle.service.model.Identifier;
+import com.configly.model.Identifier;
 
 import java.util.UUID;
 
-import static pl.feature.toggle.service.model.exception.ValidationException.isNull;
+import static com.configly.model.exception.ValidationException.isNull;
 
 
 public record EnvironmentId(

@@ -1,4 +1,4 @@
-package pl.feature.toggle.service.model.exception;
+package com.configly.model.exception;
 
 public class ValidationException extends RuntimeException {
     private ValidationException(String message) {

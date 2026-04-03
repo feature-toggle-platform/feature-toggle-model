@@ -1,8 +1,8 @@
-package pl.feature.toggle.service.model.project;
+package com.configly.model.project;
 
 
-import static pl.feature.toggle.service.model.exception.ValidationException.isBlank;
-import static pl.feature.toggle.service.model.exception.ValidationException.isNull;
+import static com.configly.model.exception.ValidationException.isBlank;
+import static com.configly.model.exception.ValidationException.isNull;
 
 public record ProjectName(
         String value

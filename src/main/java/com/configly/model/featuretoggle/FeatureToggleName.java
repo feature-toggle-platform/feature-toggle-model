@@ -1,4 +1,4 @@
-package pl.feature.toggle.service.model.featuretoggle;
+package com.configly.model.featuretoggle;
 
 public record FeatureToggleName(
         String value

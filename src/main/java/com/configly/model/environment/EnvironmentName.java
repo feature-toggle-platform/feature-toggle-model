@@ -1,7 +1,7 @@
-package pl.feature.toggle.service.model.environment;
+package com.configly.model.environment;
 
 
-import static pl.feature.toggle.service.model.exception.ValidationException.isNull;
+import static com.configly.model.exception.ValidationException.isNull;
 
 public record EnvironmentName(
         String value

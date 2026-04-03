@@ -1,4 +1,4 @@
-package pl.feature.toggle.service.model;
+package com.configly.model;
 
 import java.time.Instant;
 import java.time.LocalDateTime;

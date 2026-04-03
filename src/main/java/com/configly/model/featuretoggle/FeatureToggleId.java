@@ -1,6 +1,6 @@
-package pl.feature.toggle.service.model.featuretoggle;
+package com.configly.model.featuretoggle;
 
-import pl.feature.toggle.service.model.Identifier;
+import com.configly.model.Identifier;
 
 import java.util.UUID;
 

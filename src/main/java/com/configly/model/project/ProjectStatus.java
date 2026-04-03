@@ -1,4 +1,4 @@
-package pl.feature.toggle.service.model.project;
+package com.configly.model.project;
 
 public enum ProjectStatus {
     ACTIVE,

@@ -1,4 +1,4 @@
-package pl.feature.toggle.service.model.environment;
+package com.configly.model.environment;
 
 public enum EnvironmentStatus {
     ACTIVE,

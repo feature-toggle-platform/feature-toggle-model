@@ -1,4 +1,4 @@
-package pl.feature.toggle.service.model;
+package com.configly.model;
 
 public record Revision(
         long value
