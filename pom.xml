@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.configly</groupId>
-    <artifactId>model</artifactId>
+    <artifactId>configly-model</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
     <name>configly-model</name>
